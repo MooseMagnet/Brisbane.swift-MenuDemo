@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Bogus;
 
 namespace MenuDemoApi
@@ -38,7 +39,48 @@ namespace MenuDemoApi
             {
                 _menuIndex = 0;
             })
-            .Generate(100)
+            .Generate(99)
+            .Concat(new []
+            {
+                // May as well have one realistic restaurant...
+                new RestaurantData
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "Yum Coffee Wow",
+                    Address = "123 Unreal Street, Pretend Land",
+                    PhotoUrl = "https://sd98fg6asd98gasd9g6sda986f98d.azurewebsites.net/YumCoffeePretendCafe.jpg",
+                    Menus = new []
+                    {
+                        new MenuData
+                        {
+                            Id = Guid.NewGuid(),
+                            Name = "Breakfast",
+                            Description = "Start your day with the best coffee and a hearty breakfast.",
+                            Availability = "6am - 11am",
+                            Icon = "sunrise.fill",
+                            PdfUrl = "https://sd98fg6asd98gasd9g6sda986f98d.azurewebsites.net/GenericBreakfastMenu.pdf"
+                        },
+                        new MenuData
+                        {
+                            Id = Guid.NewGuid(),
+                            Name = "Lunch",
+                            Description = "Need something to carry you through the rest of your day? We've got you covered.",
+                            Availability = "11am - 3pm",
+                            Icon = "sun.max.fill",
+                            PdfUrl = "https://sd98fg6asd98gasd9g6sda986f98d.azurewebsites.net/GenericLunchMenu.pdf"
+                        },
+                        new MenuData
+                        {
+                            Id = Guid.NewGuid(),
+                            Name = "Dinner",
+                            Description = "Settle in for a night of fine dining and fabulous entertainment.",
+                            Availability = "Fridays 6pm - 10pm",
+                            Icon = "sunset.fill",
+                            PdfUrl = "https://sd98fg6asd98gasd9g6sda986f98d.azurewebsites.net/GenericDinnerMenu.pdf"
+                        }
+                    }
+                }
+            })
             .ToArray();
     }
     
