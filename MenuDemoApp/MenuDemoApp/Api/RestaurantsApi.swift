@@ -26,19 +26,8 @@ func getRestaurants(search: String, completion: @escaping ([RestaurantData]) -> 
         .init(name: "search", value: search)
     ]
     
-    var request = URLRequest(url: urlComponents.url!)
-    request.httpMethod = "GET"
-    
-    URLSession.shared.dataTask(
-        with: request) { (data, _, _) in
-            
-            guard let data = data, data.count > 0 else {
-                // Failed? Don't care. Pretend nothing happened.
-                completion([])
-                return
-            }
-            
-            completion(try! JSONDecoder().decode([RestaurantData].self, from: data))
-        }
-        .resume()
+    URLSession.shared.dataTask(with: urlComponents.url!) { (data, _, _) in
+        completion(try! JSONDecoder().decode([RestaurantData].self, from: data!))
+    }
+    .resume()
 }
