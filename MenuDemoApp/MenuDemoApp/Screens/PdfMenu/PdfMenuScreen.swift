@@ -3,15 +3,9 @@ import SwiftUI
 import PDFKit
 import UIKit
 
-struct PdfMenuScreen : UIViewRepresentable {
-    let url: URL
+struct PdfMenuScreen : View {
     
-    func makeUIView(context: Context) -> PDFView {
-        let pdfView = PDFView()
-        pdfView.document = PDFDocument(url: url)
-        pdfView.autoScales = true
-        return pdfView
+    var body: some View {
+        TodoView()
     }
-    
-    func updateUIView(_ uiView: PDFView, context: Context) { }
 }

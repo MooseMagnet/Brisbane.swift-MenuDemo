@@ -18,6 +18,8 @@
 		7C0E0D6224DADCDD00D6D74D /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0E0D6124DADCDD00D6D74D /* RemoteImage.swift */; };
 		7C8E9A2024DE57900042082E /* RestaurantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E9A1F24DE57900042082E /* RestaurantScreen.swift */; };
 		7C8E9A2224DE59920042082E /* MenuCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8E9A2124DE59920042082E /* MenuCard.swift */; };
+		7C9C64BD2508C6A40039CA92 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C64BC2508C6A40039CA92 /* TodoView.swift */; };
+		7C9C64BF2508CC9A0039CA92 /* FakeRestaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C64BE2508CC9A0039CA92 /* FakeRestaurants.swift */; };
 		7CCCB86524E007DC008F2F8F /* MenusList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCCB86424E007DC008F2F8F /* MenusList.swift */; };
 		7CE21CE224DE6EA100508E96 /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE21CE124DE6EA100508E96 /* SearchField.swift */; };
 		7CE21CE424DE752D00508E96 /* PdfMenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE21CE324DE752D00508E96 /* PdfMenuScreen.swift */; };
@@ -40,6 +42,8 @@
 		7C0E0D6124DADCDD00D6D74D /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		7C8E9A1F24DE57900042082E /* RestaurantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantScreen.swift; sourceTree = "<group>"; };
 		7C8E9A2124DE59920042082E /* MenuCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCard.swift; sourceTree = "<group>"; };
+		7C9C64BC2508C6A40039CA92 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		7C9C64BE2508CC9A0039CA92 /* FakeRestaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRestaurants.swift; sourceTree = "<group>"; };
 		7CCCB86424E007DC008F2F8F /* MenusList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusList.swift; sourceTree = "<group>"; };
 		7CE21CE124DE6EA100508E96 /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
 		7CE21CE324DE752D00508E96 /* PdfMenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdfMenuScreen.swift; sourceTree = "<group>"; };
@@ -80,7 +84,7 @@
 			children = (
 				7CEB150824DE4F6300149231 /* Api */,
 				7CEB150524DE4F1100149231 /* Screens */,
-				7C0E0D6024DADCC800D6D74D /* NastyRemoteImageStuff */,
+				7C0E0D6024DADCC800D6D74D /* IgnoreThisStuff */,
 				7C0E0D4724DABF7200D6D74D /* AppDelegate.swift */,
 				7C0E0D4924DABF7200D6D74D /* SceneDelegate.swift */,
 				7C0E0D4B24DABF7200D6D74D /* ContentView.swift */,
@@ -97,16 +101,18 @@
 			isa = PBXGroup;
 			children = (
 				7C0E0D5024DABF7300D6D74D /* Preview Assets.xcassets */,
+				7C9C64BE2508CC9A0039CA92 /* FakeRestaurants.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7C0E0D6024DADCC800D6D74D /* NastyRemoteImageStuff */ = {
+		7C0E0D6024DADCC800D6D74D /* IgnoreThisStuff */ = {
 			isa = PBXGroup;
 			children = (
 				7C0E0D6124DADCDD00D6D74D /* RemoteImage.swift */,
+				7C9C64BC2508C6A40039CA92 /* TodoView.swift */,
 			);
-			path = NastyRemoteImageStuff;
+			path = IgnoreThisStuff;
 			sourceTree = "<group>";
 		};
 		7C8E9A1E24DE57810042082E /* Restaurant */ = {
@@ -230,6 +236,7 @@
 				7CEB150D24DE500400149231 /* RestaurantsList.swift in Sources */,
 				7C8E9A2224DE59920042082E /* MenuCard.swift in Sources */,
 				7C0E0D4824DABF7200D6D74D /* AppDelegate.swift in Sources */,
+				7C9C64BF2508CC9A0039CA92 /* FakeRestaurants.swift in Sources */,
 				7C8E9A2024DE57900042082E /* RestaurantScreen.swift in Sources */,
 				7CCCB86524E007DC008F2F8F /* MenusList.swift in Sources */,
 				7C0E0D4A24DABF7200D6D74D /* SceneDelegate.swift in Sources */,
@@ -239,6 +246,7 @@
 				7C0E0D5F24DACD3E00D6D74D /* RestaurantCard.swift in Sources */,
 				7CEB150A24DE4F6C00149231 /* RestaurantsApi.swift in Sources */,
 				7C0E0D6224DADCDD00D6D74D /* RemoteImage.swift in Sources */,
+				7C9C64BD2508C6A40039CA92 /* TodoView.swift in Sources */,
 				7C0E0D4C24DABF7200D6D74D /* ContentView.swift in Sources */,
 				7CE21CE424DE752D00508E96 /* PdfMenuScreen.swift in Sources */,
 			);
