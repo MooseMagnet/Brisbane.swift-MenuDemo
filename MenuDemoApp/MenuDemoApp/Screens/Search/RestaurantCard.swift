@@ -5,8 +5,6 @@ struct RestaurantCard : View {
     
     let restaurant: RestaurantData
     
-    @State private var image: UIImage? = nil
-    
     var body: some View {
         VStack {
             Spacer()
