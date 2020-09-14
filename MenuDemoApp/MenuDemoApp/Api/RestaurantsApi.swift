@@ -10,7 +10,7 @@ struct RestaurantData : Codable {
     let menus: [MenuData]
 }
 
-struct MenuData : Codable {
+struct MenuData : Codable, Identifiable {
     let id: UUID
     let icon: String
     let name: String
